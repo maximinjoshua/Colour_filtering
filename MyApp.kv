@@ -1,0 +1,48 @@
+<BaseGridLayout>
+    orientation: "horizontal"
+    # Button:
+    #     #size_hint: .2, .2
+    #     text: "2"
+    #     #size: "400dp", "400dp"
+    # Button:
+    #     #size_hint: None, 1
+    #     text: "3"
+    #     #width: "100dp"
+    # TextInput:
+    #     #size_hint: None, 1
+    #     #width: "100dp"
+    #     text: "maxi"
+    #     multiline: False
+    #     on_text_validate : root.print_text_input(self)
+    Image:
+        id: image_file
+        # size: "500dp", "500dp"
+        source: ""
+    BoxLayout:
+        orientation: "vertical"
+        size_hint: None, 1
+        width: "200dp"
+        Button:
+            background_color: 1,0,0,1
+            text: "Red"
+            on_press: root.on_button_click('red')
+        Button:
+            background_color: 0,1,.35,1
+            text: "Green"
+            on_press: root.on_button_click('green')
+        Button:
+            background_color: 0,.5,1,1
+            text: "Blue"
+            on_press: root.on_button_click('blue')
+
+# <BoxLayoutExample@BoxLayout>:
+#     orientation: "horizontal"
+#     Button:
+#         text:"gaga"
+#     Button:
+#         text:"gogo"
+#     Button:
+#         text:"ffff"
+
+
+    
