@@ -45,7 +45,7 @@ class BaseGridLayout(BoxLayout):
         background = cv.bitwise_and(gray, gray, mask = mask_inv)
         background = np.stack((background,)*3, axis=-1)
         added_img = cv.add(res, background)
-        save_path = os.path.abspath(os.getcwd())+"\images\grayimg.jpg"
+        save_path = os.path.join(os.path.dirname(__file__), 'images', 'grayimg.jpg')
         cv.imwrite(save_path, added_img)
         return save_path
 
